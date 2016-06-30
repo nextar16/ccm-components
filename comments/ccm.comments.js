@@ -4,10 +4,10 @@ ccm.component( {
 
     config: {
 
-        html:  [ ccm.store, { local: 'json/template.json' } ],
+        html:  [ ccm.store, { local: '../comments/template.json' } ],
         key:   'mk_comment',
         store: [ ccm.store, { url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'mk_comments_1_0_0' } ],
-        style: [ ccm.load, 'css/comments.css' ],
+        style: [ ccm.load, '../comments/comments.css' ],
         user:  [ ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js' ],
         likes: [ ccm.component, '../likes/ccm.likes.js' ]
     },
